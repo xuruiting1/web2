@@ -1,0 +1,177 @@
+*{
+	margin:0px;
+	padding:0px;
+	
+}
+body
+{
+	background-color: #DCDCDC;
+}
+#table1{
+	width:936px;
+	height:610px;
+	background-color: #DCDCDC;
+}
+td{
+	text-align: center;
+
+}
+.big
+{
+	width: 1200px;
+	height: 620px;
+	border: 1px;
+	margin: auto;
+}
+.left
+{
+	width: 234px;
+	height: 614px;
+	float: left;
+}
+.right
+{
+	height: 614px;
+}
+.cell
+{
+	width: 225px;
+	background-color: #FFF;
+	height: 300px;
+}
+.images{
+	width: 170px;
+	height: 170px;
+	line-height:middle;
+	background-color: #fff;
+}
+
+.introduce{
+	color:#A9A9A9;
+	font-size: 12px;
+}
+.product
+{
+	font-size: 14px;
+}
+.price
+{
+	color: red;
+	font-size: 14px;
+	
+}
+#spec
+{
+	color:#A9A9A9;
+	text-decoration: line-through;
+	float: left;
+	margin-left: 135px;
+	margin-top: -20px;
+}
+#title
+{
+	font-size: 26px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+li
+{
+	float: right;
+	list-style: none;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 15px;
+	font-size: 18px;
+	color: red;
+}
+.big
+{
+	clear: both;
+}
+/*隐藏，鼠标滑过再出来*/
+#table1 tr td span
+{
+	
+	background-color: red;
+	display: none;
+	
+}
+#table1 tr td.subMenuShow span
+{
+	width: 225px;
+	height: 60px;
+	display:block;
+	background-color: #FF8C00;
+	font-size: 12px;
+	margin: auto;
+	margin-bottom: -40px;
+}
+#table1 tr td.subMenuShow
+{
+	background-color: #FFF;
+	height: 310px;
+	width: 225px;
+}
+#table1 tr td.subMenuShow div
+{
+	display:none;
+}
+#table1 tr td.subMenuShow #sss
+{
+	display:block;
+}
+.introduce2{
+	color:#A9A9A9;
+	font-size: 12px;
+}
+
+.price2
+{
+	color: red;
+	font-size: 14px;
+	
+}
+/*设置table2*/
+
+.small
+{
+	height: 70px;
+	background-color: #fff;
+}
+#table2
+{
+	width: 230px;
+	height: 300px;
+	float:right;
+	/*padding-right: 2px;*/
+}
+.product1
+{
+	font-size: 14px;
+	margin-left: 10px; 
+}
+.price1
+{
+	color: red;
+	font-size: 14px;
+}
+.introduce1{
+	color:#A9A9A9;
+	font-size: 12px;
+	text-align:left; 
+}
+#new
+{
+	background-color: #fff;
+	text-align: center;
+}
+#new1
+{
+	background-color: #fff;
+}
+#product2
+{
+	
+	margin-left: 10px; 
+}

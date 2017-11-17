@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小米首页家电</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript">
+		window.onload = function(){
+			var tdNodes = document.getElementsByTagName("td");
+			for (var i=0; i<tdNodes.length-3; i++)
+			{
+				
+				tdNodes[i].onmouseover = function(){
+					this.className = "subMenuShow";
+				}
+				tdNodes[i].onmouseout = function(){
+					this.className = "cell";
+				}
+			}
+		}
+				
+	</script>
+</head>
+<body>
+	<div>
+		<p id="title">家电</p>
+		<ul>
+			<li>热门</li>
+			<li>电视影音</li>
+			<li>电脑</li>
+			<li>家居</li>
+		</ul>
+	</div>
+	
+	<div class="big">
+		<div class="left">
+			<img src="images/9.jpg">
+		</div>
+		<div class="right">
+			<table  id="table1">
+				<tr>
+					<td class="cell">
+							<img src="images/1.jpg" class="images">
+							<p class="product">小米电视4A 32英寸</p>
+							<div>
+								<p class="introduce">64位四核处理器/1GB+4GB大内存</p>
+								<p class="price">999元 <p id="spec">1199</p></p>
+							</div>
+							<span class="xxx">听说小米客服满腹经纶，能不能<br/>为在下对副对联！上联是...<br/>
+							来自于&nbsp;断点的评价&nbsp;
+							</span>
+						
+					</td>
+					<td class="cell">
+						<img src="images/2.png" class="images"> 
+						<p class="product">小米电视 4A 49英寸</p>
+						<div>
+							<p class="introduce">2GB+8GB大储存/全高清HDR</p>
+							<p class="price">2399元</p>
+						</div>
+						<span>外形高大上，小米产品果然质量<br/>非一般。<br/>
+						来自于&nbsp;石家辉&nbsp;的评价</span>
+					</td>
+					<td class="cell">
+						<img src="images/3.jpg" class="images">
+					 	<p class="product">小米笔记本Pro 15.6</p>
+					 	<div>
+					 		<p class="introduce">全金属强化机身/FHD全贴合屏幕</p>
+					 		<p class="price">5599元</p>
+					 	</div>
+					 	<span>和我想象的一样好，从红米<br/>2，not，4，小米5S...<br/>
+						来自于&nbsp;于兰车&nbsp;的评价</span>
+					 </td>
+					<td class="cell">
+						<img src="images/4.jpg" class="images">
+						<p class="product">小米笔记本Air 13.3"i7处理器</p>
+						<div>
+							<p class="introduce">Intel酷睿i7处理器，8GB内存+256GB</p>
+							<p class="price">5999元</p>
+						</div>
+						<span>戴老板的话，小米的<br/>产品很有设计感。<br/>
+						来自于&nbsp;holes&nbsp;的评价</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="cell" >
+						<img src="images/5.jpg" class="images">
+					 	<p class="product">米家恒温电水壶</p>
+					 	<div>
+					 		<p class="introduce">水温智能控制，304不锈钢内胆</p>
+					 		<p class="price">199元</p>
+					 	</div>
+					 	<span>这是第三个了，比第一个优惠不<br/>少，质量还不错。烧水也没...<br/>
+						来自于&nbsp;暖酒清风&nbsp;的评价</span>
+					 </td>
+					<td class="cell">
+						<img src="images/6.jpg" class="images">
+						<p class="product">智米全直流变频空调1.5匹</p>
+						<div id="sss">
+							<p class="introduce">一级能效，强劲冷暖</p>
+							<p class="price">4399元</p>
+						</div>
+						
+					</td>
+					<td class="cell" >
+						<img src="images/7.jpg" class="images">
+						<p class="product">小米净水器(厨上式)增强版</p>
+						<div>
+							<p class="introduce">400加仑大流量，纯水更多，废水更少</p>
+							<p class="price">1499元</p>
+						</div>
+						<span>太便宜啦，只要轻轻一按就可<br/>以安装上去了，萌妹子也可...<br/>
+						来自于&nbsp;holes&nbsp;的评价
+						</span>
+					</td>
+					<td>
+						<table  id="table2" >
+							<tr>
+								<td id="new">
+									<p class="product1"  >小白摄影机</p>
+									<p class="price1" >399元</p>
+									<img src="images/8.jpg" class="small">
+								</td>
+							</tr>
+							<tr>
+								<td  id="new1">
+									<p id="product2">浏览更多</p>
+									<p class="introduce2">热门</p>
+									<img src="images/11.png" class="small">
+								 </td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>
