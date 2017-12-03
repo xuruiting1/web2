@@ -1,0 +1,202 @@
+body{
+	padding: 0px;
+    margin: 0px auto;
+    background-image: url(images/body_bg.gif);
+    background-repeat: repeat-x;
+    font-size: 12px;
+
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+.top{
+    width: 1000px;
+    position: relative;
+    margin: auto;
+    border-top: 5px solid #284c7e;
+    z-index: 9999;
+}
+
+/*Logo设置*/
+.logo {
+    width: 40px;
+    float: left;
+    margin-top: 13px;
+}
+.top_right {
+    text-align: right;
+    height: 80px;
+    float: right;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+.englishT {
+    padding-right: 25px;
+}
+.top_right a {
+    color: #fc8200;
+}
+.top_right {
+    text-align: right;
+    line-height: 28px;
+}
+
+/*搜索设置*/
+.search {
+    float: left;
+    width: 200px;
+    height: 31px;
+    line-height: 34px;
+    margin: 0px;
+    border: 1px solid #b6b6b6;
+    border-right: 0px;
+    padding-left: 10px;
+    
+}
+
+.search2 {
+    width: 45px;
+    height: 35px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #b6b6b6;
+    background-image: url(images/search_btn.gif);
+    background-position: center;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    border-left: 0px;
+    margin-right: 20px;
+}
+/*导航栏css设置*/
+.nav {
+    width: 1000px;
+    height: 55px;
+    margin-top: 95px;
+    padding-top: 5px;
+    border-top: 1px solid #d6d6d6;
+    z-index: 100;
+    position: relative;
+    z-index: 9999;
+}
+#oneul li {
+    float: left;
+    list-style: none;
+}
+#oneul li a {
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+}
+#oneul li ul li {
+    float: none;
+    display: inline;
+}
+
+
+/*隐藏的导航栏*/
+#oneul li ul li a {
+    width: 120px;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 25px;
+    background-color: #0e6eb8;
+    color: #fff;
+    background-image: none;
+    font-size: 14px;
+    height: 45px;
+    line-height: 45px;
+  
+}
+.impor .twoul
+{
+	margin: 0;
+    padding: 0;
+    position: absolute;
+    display: none;
+}
+.small {
+    background-image: url(images/nav.gif);
+    width: 10px;
+    height: 6px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-top: -30px;
+    margin-left: 90px;
+
+}
+
+.impor2
+{
+    
+    width: 110px;
+    height: 55px;
+}
+
+
+.impor2 .twoul
+{
+    display: block;
+    margin:0px;
+    padding: 0;
+}
+
+ #oneul a:hover {
+    
+    background-color:  #0e6eb8;
+}
+
+
+/*照片轮换*/
+
+.wrap
+{
+    width: 1200px;
+    height: 397px;
+    border: 5px solid #000;
+    margin:  auto ;
+    overflow: hidden;
+    position: relative;
+}
+.wrap a
+{
+    display:none;
+}
+.btn
+{
+    width: 1002px;
+    height: 73px;
+    background: url(images/11.png);
+    position: absolute;
+    bottom: 0px;
+    left: 99px;
+}
+.btn span
+{
+    display: block;
+    float: left;
+    color: #fff;
+    width: 40px;
+    height: 73px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 73px;
+   
+    cursor: pointer;
+}
+.btn #next
+{
+    float: right;
+}

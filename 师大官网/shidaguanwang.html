@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>data</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.wrap
+		{
+			width: 1200px;
+			height: 397px;
+			border: 5px solid #000;
+			margin: 30px auto;
+			overflow: hidden;
+			position: relative;
+		}
+		.wrap a
+		{
+			display:none;
+		}
+		.btn
+		{
+			width: 1002px;
+			height: 73px;
+			background: url(images/11.png);
+			position: absolute;
+			bottom: 0px;
+			left: 99px;
+		}
+		.btn span
+		{
+			display: block;
+			float: left;
+			color: #fff;
+			width: 40px;
+			height: 73px;
+			font-size: 30px;
+			text-align: center;
+			line-height: 73px;
+			background: red;
+			cursor: pointer;
+		}
+		.btn #next
+		{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+		<div class="wrap">
+			<a href="#" style="display:block"><img src="images/2.jpg" alt=""></a>
+			<a href="#"><img src="images/4.jpg" alt=""></a>
+			<a href="#"><img src="images/6.jpg" alt=""></a>
+			<a href="#"><img src="images/7.jpg" alt=""></a>
+			<a href="#"><img src="images/1.gif" alt=""></a>
+			<a href="#"><img src="images/10.gif" alt=""></a>
+			<a href="#"><img src="images/7.jpg" alt=""></a>
+			<a href="#"><img src="images/7.jpg" alt=""></a>
+			<div class="btn">
+				<span id="prev"><</span>
+				<span id="next">></span>
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			var box =document.getElementsByClassName('wrap')[0];
+			//box是数组形式的要注意
+			var i=0;
+			var links=box.children;
+			var timer;
+			function imgtable()
+			{
+				links[i%8].style.display='none';
+				i++;
+				links[i%8].style.display='block';
+			}
+			timer=setInterval(imgtable,2000);
+			box.onmouseover=function(){
+				clearInterval(timer);
+			}
+			box.onmouseout=function(){
+				timer=setInterval(imgtable,2000)//imgtable在 周期执行的函数里面调用
+			}
+			var prev=document.getElementById('prev');
+			var next=document.getElementById('next');
+			prev.onclick=function(){
+				links[i%8].style.display='none';
+				i--;
+				if(i<0)
+				{
+					i=7;
+				}
+				links[i%8].style.display='block';
+	
+			}
+			next.onclick=function(){
+				imgtable();
+			}
+		</script>
+</body>
+</html>
