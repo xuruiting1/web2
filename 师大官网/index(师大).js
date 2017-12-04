@@ -25,9 +25,9 @@ var box =document.getElementsByClassName('wrap')[0];
 			var timer;
 			function imgtable()
 			{
-				links[i%8].style.display='none';
+				links[i%9].style.display='none';
 				i++;
-				links[i%8].style.display='block';
+				links[i%9].style.display='block';
 			}
 			timer=setInterval(imgtable,2000);
 			box.onmouseover=function(){
@@ -39,13 +39,13 @@ var box =document.getElementsByClassName('wrap')[0];
 			var prev=document.getElementById('prev');
 			var next=document.getElementById('next');
 			prev.onclick=function(){
-				links[i%8].style.display='none';
+				links[i%9].style.display='none';
 				i--;
 				if(i<0)
 				{
-					i=7;
+					i=8;
 				}
-				links[i%8].style.display='block';
+				links[i%9].style.display='block';
 	
 			}
 			next.onclick=function(){
