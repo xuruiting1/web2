@@ -1,0 +1,7 @@
+1、 为什么必须设置 white-space 和 overflow 两个属性？
+第一个是为了 文本不会换行，就是图片会在一行显示，不会换行
+第二个是为了把后面超过picScroll的部分给藏起来，只有图片的宽度长于picScroll的时候才能完成滚动的效果
+2、 设计<span id=”picScroll2”></span>的目的何在？
+在我写的代码中，<span id=”picScroll2”></span>中和<span id=”picScroll1”></span>中的内容是相同的
+这样滚动相册才不会出现<span id=”picScroll1”></span>滚动结束以后就停止的错误，加上<span id=”picScroll2”></span>
+能让滚动相册无缝衔接
